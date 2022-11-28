@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ArgenMex - Resto</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>
@@ -14,7 +15,7 @@
             <a href="">Inicio</a>
           </li>
           <li>
-            <a href="./quienes-somos.html">Quienes somos?</a>
+            <a id="quienesSomos" href="./quienes-somos.html">Quienes somos?</a>
           </li>
           <li>
             <a href="./comprar.html">Comprar</a>
@@ -25,12 +26,13 @@
         </ul>
       </nav>
       <div>
-        <img src="./imagenes/logo.jpg" alt="Logo del restaurant ArgenMex" />
+        <img id="logoIndex" src="./imagenes/logo.jpg" alt="Logo del restaurant ArgenMex" />
       </div>
     </header>
     <main>
-      <h1>Restaurant ArgenMex</h1>
-      <section>
+      
+      <section class="seccionH1">
+        <h1>BIENVENIDOS AL RESTAURANT ARGEN-MEX</h1>
         <div>
           <img src="./imagenes/puebla.jpg" alt="Sucursal Puebla" />
           <h2>Sucursal Puebla</h2>
@@ -165,11 +167,13 @@
         ></iframe>
       </div>
       <div>
-        <audio src="./audio/audio_fondo.mp3" controls autoplay></audio>
+        <audio src="./audio/audio_fondo.mp3" controls ></audio>
       </div>
     </main>
-    <footer>
+    <footer class="footerIndex">
       <p>ArgenMex --- Todos los derechos reservados</p>
+      <iconify-icon class="iconoFacebook" icon="ic:twotone-facebook"></iconify-icon>
     </footer>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
   </body>
 </html>
