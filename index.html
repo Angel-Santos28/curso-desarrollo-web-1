@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ArgenMex - Resto</title>
+    <title>Auditech</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>
       <nav>
-        <ul>
+        <div>
+          <img id="logoIndex" src="./imagenes/audifonos.png" alt="Logo de auditech" />
+        </div>
+        <ul class="navbar">
           <li>
             <a href="">Inicio</a>
           </li>
@@ -23,153 +26,77 @@
           <li>
             <a href="./contacto.html">Contacto</a>
           </li>
+          <li>
+            <input type="text" placeholder="Buscar...">
+          </li>
         </ul>
       </nav>
       <div>
-        <img id="logoIndex" src="./imagenes/logo.jpg" alt="Logo del restaurant ArgenMex" />
+        <p id="numeroPedidos">3</p>
+        <img class="carritoCompras" src="./imagenes/carrito.png" alt="carrito de compras" />
       </div>
     </header>
     <main>
       
       <section class="seccionH1">
-        <h1>BIENVENIDOS AL RESTAURANT ARGEN-MEX</h1>
-        <div>
-          <img src="./imagenes/puebla.jpg" alt="Sucursal Puebla" />
-          <h2>Sucursal Puebla</h2>
-          <p>
-            Esta es la sucursal número 1 que Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Temporibus quis alias veniam
-            blanditiis eligendi corporis sint, quam suscipit! Atque ratione
-            minus sequi quam impedit nihil reprehenderit iure aliquid
-            exercitationem. Praesentium!
-          </p>
-        </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102609.85264035684!2d-98.21047461044924!3d19.052054739609293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0bd5ebc7a3b%3A0x48a6461de494ad95!2sPuebla%2C%20Pue.!5e1!3m2!1ses!2smx!4v1668846878511!5m2!1ses!2smx"
-          width="1285"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
-        <div>
-          <img src="./imagenes/BA.jpg" alt="Sucursal Buenos Aires" />
-          <h2>Sucursal Buenos Aires</h2>
-          <p>
-            Esta es la sucursal número 1 que Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Temporibus quis alias veniam
-            blanditiis eligendi corporis sint, quam suscipit! Atque ratione
-            minus sequi quam impedit nihil reprehenderit iure aliquid
-            exercitationem. Praesentium!
-          </p>
-        </div>
+        <h1>BIENVENIDO A AUDITECH</h1>
+          <p class="textoSlogan">¡ Para el deleite de tus oidos !</p>
+          <img class="imagenFondo" src="./imagenes/fondo.jpg" alt="imagen de fondo" />
       </section>
-      <aside>
-        <div>
-          <img src="./imagenes/WhatsApp.jpg" alt="whatsapp" />
-        </div>
-      </aside>
+      
       <section>
-        <h1>Qué productos puedo comprar?</h1>
-        <ul>
-          <li>Comidas</li>
-          <li>Desayunos</li>
-          <li>Bebidas</li>
-        </ul>
-        <h1>Cómo comprar?</h1>
-        <ol>
-          <li>Seleccionar los productos</li>
-          <li>Mandarlos al carrito</li>
-          <li>Comprar</li>
-        </ol>
-        <table>
-          <tr>
-            <td>Desayunos</td>
-            <td>Comidas</td>
-            <td>Bebidas</td>
-          </tr>
-          <tr>
-            <td>Omelette</td>
-            <td>Mole</td>
-            <td>Café</td>
-          </tr>
-        </table>
+        <p class="estiloTexto">
+          La adquisición de una bocina, audifonos y todo lo relacionado a los audios de ultima tecnología 
+          actualmente te ofrecen múltiples beneficios que mejoran la calidad de tus audios.
+        </p>
       </section>
-      <section>
-        <form>
-          <h3>Contactanos!!</h3>
-          <input type="text" placeholder="Ingrese su nombre" />
-          <input type="text" placeholder="Ingrese su apellido" />
-          <input type="number" placeholder="Ingrese su edad" />
-          <input type="email" placeholder="Ingrese su email" />
-          <input type="text" placeholder="Ingrese su dirección" />
 
-          <input type="submit" value="Enviar" />
-          <h3>Envíe sus comentarios</h3>
-          <textarea
-            name=""
-            id=""
-            placeholder="Envianos tu duda!"
-            cols="30"
-            rows="10"
-          ></textarea>
-          <input type="submit" value="Enviar" />
-          <input type="reset" value="Limpiar" />
-        </form>
-        <form action="">
-          <div>Comida</div>
-          <input type="radio" name="rd_servicios" />
-          <div>Desayuno</div>
-          <input type="radio" name="rd_servicios" />
-          <div>Bebidas</div>
-          <input type="radio" name="rd_servicios" />
-        </form>
-        <br /><br />
-        <form action="">
-          <div>Comida</div>
-          <input type="checkbox" />
-          <div>Desayuno</div>
-          <input type="checkbox" />
-          <div>Bebidas</div>
-          <input type="checkbox" />
-        </form>
-        <br /><br />
-        <form action="">
-          <select name="Servicios" id="">
-            <option value="Comida">Comida</option>
-            <option value="Desayuno">Desayuno</option>
-            <option value="Bebidas">Bebidas</option>
-          </select>
+      <section>
+        <div class="imagenGrid">
+          <img src="./imagenes/galeria-1.jpg" alt="imagenes ilustrativos">
+          <img src="./imagenes/galeria-2.jpg" alt="imagenes ilustrativos">
+          <img src="./imagenes/galeria-3.jpg" alt="imagenes ilustrativos">
+          <img src="./imagenes/galeria-4.jpg" alt="imagenes ilustrativos">
+          <img src="./imagenes/galeria-5.jpg" alt="imagenes ilustrativos">
+          <img src="./imagenes/galeria-6.jpg" alt="imagenes ilustrativos">
+          <img src="./imagenes/galeria-7.jpg" alt="imagenes ilustrativos">
+        <div/>
+      </section>
+      
+      <section class="seccionH1">
+        <p class="estiloTexto">
+          Que la música no falte! Encuentra lo más reciente en Audífonos Bluetooth, On ear, 
+          In ear y con micrófono a Meses sin Intereses y Envío Gratis*.
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d767.9835682486934!2d-98.19851504219992!3d19.04413510129946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1670228647306!5m2!1ses!2smx" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+      <div class="estiloTexto">
+        <p>¿Sabías que tenemos nuestra sucursal en el centro histórico de Puebla en donde contamos con nuestra propia línea de baterías que te garantizan la mejor calidad y máxima duración? Las pilas Auditech se fabrican bajo los más altos estándares de calidad para ofrecerte un rendimiento que compite con las marcas más famosas del mercado.
+          Así que no dudes en visitarnos.
+        </p>
+      </div>
+      
+      <section class="seccionDatos">
+        <form>
+          <h3> Ingresa tus datos </h3>
+          <div class="enviarDatos">
+            <input type="text" placeholder="Escribe tu nombre">
+            <input type="text" placeholder="Escribe tu apellido paterno">
+            <input type="text" placeholder="Escribe tu apellido materno">
+            <input type="number" placeholder="Escribe tu edad">
+            <input type="text" placeholder="Escribe tu número de telefono">
+            <button type="submit" class="buttonEnviar">Enviar</button>
+          </div>
         </form>
       </section>
-      <div>
-        <h4>Comida - Mole poblano</h4>
-        <img src="./imagenes/comida.jpg" alt="Imagen de comida" />
-      </div>
-      <div>
-        <h4>Comida - Tostadas</h4>
-        <img
-          src="https://www.comedera.com/wp-content/uploads/2017/06/10.jpg"
-          alt="Imagen de comida"
-        />
-      </div>
-      <div>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/J3yH8UQKJfU"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div>
-        <audio src="./audio/audio_fondo.mp3" controls ></audio>
+
+      <div class="estiloTexto">
+        <p>A nosotros nos interesa saber mas de sus opiniones y/o sugerencias para seguir mejorando y darle un servicio de calidad que se merece durante su estancia en cada
+          de nuestras sucursales. Así que lo invitamos a que se registre para tomarlo en cuenta.
+        </p>
       </div>
     </main>
+
     <footer class="footerIndex">
       <p>ArgenMex --- Todos los derechos reservados</p>
       <iconify-icon class="iconoFacebook" icon="ic:twotone-facebook"></iconify-icon>
