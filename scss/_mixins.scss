@@ -1,0 +1,8 @@
+@mixin btnPrimario ($btnColorFondo, $btnColorTexto){
+    color: $btnColorTexto;
+    background-color: $btnColorFondo;
+    &:hover{
+        background-color: $btnColorTexto;
+        color: $btnColorFondo;
+    }
+}

@@ -1,0 +1,111 @@
+header {
+    background-color: #F6F4F6;
+    div {
+        width: 100%;
+        #logoIndex {
+            position: absolute;
+            top: -25px;
+            left: -20px;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            margin: 2rem;
+        }
+        .carritoCompras {
+            position: absolute;
+            top: -10px;
+            right: -20px;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            margin: 2rem;
+        }
+    }
+    nav {
+        padding: 40px;
+        .navBar {
+            display: flex;
+            justify-content:space-evenly;
+            align-items:center;
+            li { 
+                list-style: none;
+                a {
+                   text-decoration: none;
+                   color: #18A0FB;
+                   padding: 0.5rem;
+                   letter-spacing: 1px;
+                   &:hover{
+                        background-color: $colorFondo;
+                        border-radius: 30px;
+                        color: #F6F4F6;
+                   }
+                } 
+            }
+            span {
+                width: 40%;
+                input {
+                    width: 70%;
+                    height: 1.5rem;
+                    &:focus-visible {
+                        outline: 2px solid #18A0FB;
+                    }
+                }
+                .btnBuscar {
+                    width: 80px;
+                    height: 2rem;
+                    background-color: #18A0FB;
+                    color: white;
+                    letter-spacing: 0.5px;
+                    border-radius: 30px;
+                    margin-left: 10px;
+                    border: 0;
+                    font-size: 0.9rem;
+                    &:hover {
+                        background-color: $colorFondo;
+                        color: white;
+                        box-shadow:  0 0 2px 2px rgb(179, 176, 176);
+                        transition: all 0.3s;
+                    }
+                }
+            }
+        }
+    }
+    div {
+        .btnMenu {
+            display: none;
+        }
+    }
+    
+}
+@media only screen and (max-width:720px){
+    header {
+        div {
+            #logoIndex {
+                width: 4rem;
+                height: 4rem;
+            }
+            .carritoCompras {
+                display: none;
+            }
+            .btnMenu {
+                display: block;
+                position:absolute;
+                top: 10px;
+                right: 0px;
+                margin: 1rem;
+                width: 2rem;
+                height: 2rem;
+                background-color: #18A0FB;
+                color: white;
+                border-radius: 45px;
+                border:1px solid #4d4c4c;
+                font-size: 1.3rem;
+            }
+        }
+        nav {
+            .navBar {
+                display: none;
+            }
+        }
+    }
+}

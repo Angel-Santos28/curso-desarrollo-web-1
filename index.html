@@ -5,102 +5,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Auditech</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header>
+      <div>
+        <img id="logoIndex" src="./imagenes/audifonos.png" alt="Logo de auditech" />
+      </div>
       <nav>
-        <div>
-          <img id="logoIndex" src="./imagenes/audifonos.png" alt="Logo de auditech" />
-        </div>
-        <ul class="navbar">
+        <ul class="navBar">
           <li>
             <a href="">Inicio</a>
           </li>
           <li>
-            <a id="quienesSomos" href="./quienes-somos.html">Quienes somos?</a>
+            <a  href="./quienes-somos.html">¿Quienes somos?</a>
           </li>
           <li>
-            <a href="./comprar.html">Comprar</a>
+            <a href="./comprar.html">Pedidos</a>
           </li>
           <li>
             <a href="./contacto.html">Contacto</a>
           </li>
-          <li>
+          <span>
             <input type="text" placeholder="Buscar...">
-          </li>
+            <button name="btnBuscar" class="btnBuscar" type="submit">Buscar</button>
+          </span>
         </ul>
       </nav>
       <div>
-        <p id="numeroPedidos">3</p>
         <img class="carritoCompras" src="./imagenes/carrito.png" alt="carrito de compras" />
       </div>
+
+      <div>
+        <button class="btnMenu">+</button>
+      </div>
+
     </header>
     <main>
       
-      <section class="seccionH1">
+      <section class="seccion1">
         <h1>BIENVENIDO A AUDITECH</h1>
-          <p class="textoSlogan">¡ Para el deleite de tus oidos !</p>
-          <img class="imagenFondo" src="./imagenes/fondo.jpg" alt="imagen de fondo" />
+        <p class="textoSlogan">¡ Para el deleite de tus oidos !</p>
+        <img class="imagenFondo" src="./imagenes/fondo.jpg" alt="imagen de fondo" />
       </section>
       
-      <section>
-        <p class="estiloTexto">
-          La adquisición de una bocina, audifonos y todo lo relacionado a los audios de ultima tecnología 
-          actualmente te ofrecen múltiples beneficios que mejoran la calidad de tus audios.
-        </p>
-      </section>
+      <section class="seccion2">
 
-      <section>
-        <div class="imagenGrid">
-          <img src="./imagenes/galeria-1.jpg" alt="imagenes ilustrativos">
-          <img src="./imagenes/galeria-2.jpg" alt="imagenes ilustrativos">
-          <img src="./imagenes/galeria-3.jpg" alt="imagenes ilustrativos">
-          <img src="./imagenes/galeria-4.jpg" alt="imagenes ilustrativos">
-          <img src="./imagenes/galeria-5.jpg" alt="imagenes ilustrativos">
-          <img src="./imagenes/galeria-6.jpg" alt="imagenes ilustrativos">
-          <img src="./imagenes/galeria-7.jpg" alt="imagenes ilustrativos">
-        <div/>
-      </section>
-      
-      <section class="seccionH1">
-        <p class="estiloTexto">
-          Que la música no falte! Encuentra lo más reciente en Audífonos Bluetooth, On ear, 
-          In ear y con micrófono a Meses sin Intereses y Envío Gratis*.
-        </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d767.9835682486934!2d-98.19851504219992!3d19.04413510129946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2smx!4v1670228647306!5m2!1ses!2smx" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </section>
-      <div class="estiloTexto">
-        <p>¿Sabías que tenemos nuestra sucursal en el centro histórico de Puebla en donde contamos con nuestra propia línea de baterías que te garantizan la mejor calidad y máxima duración? Las pilas Auditech se fabrican bajo los más altos estándares de calidad para ofrecerte un rendimiento que compite con las marcas más famosas del mercado.
-          Así que no dudes en visitarnos.
-        </p>
-      </div>
-      
-      <section class="seccionDatos">
-        <form>
-          <h3> Ingresa tus datos </h3>
-          <div class="enviarDatos">
-            <input type="text" placeholder="Escribe tu nombre">
-            <input type="text" placeholder="Escribe tu apellido paterno">
-            <input type="text" placeholder="Escribe tu apellido materno">
-            <input type="number" placeholder="Escribe tu edad">
-            <input type="text" placeholder="Escribe tu número de telefono">
-            <button type="submit" class="buttonEnviar">Enviar</button>
+        <div class="card">
+          <img src="./imagenes/galeria-6.jpg" class="card-img-top cardImagen" alt="imagen de bocina">
+          <div class="card-body">
+            <h5 class="card-title">Audifonos con manos libres</h5>
+            <p class="card-text">Marca: Samsung</p>
+            <p class="card-text">Modelo: YUW2022</p>
+            <a href="#" class="btn btn-outline-primary btnAudifonos">Agregar</a>
           </div>
-        </form>
+        </div>
+
+        <div class="card">
+          <img src="./imagenes/galeria-5.jpg" class="card-img-top cardImagen" alt="imagen de audifonos">
+          <div class="card-body cardAirpods">
+            <h5 class="card-title">Airpods</h5>
+            <p class="card-text">Marca: Iphone</p>
+            <p class="card-text">Modelo: TYWUSH23</p>
+            <a href="#" class="btn btn-outline-primary btnAirpods">Agregar</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./imagenes/galeria-2.jpg" class="card-img-top cardImagen" alt="imagen de bocina">
+          <div class="card-body Cards">
+            <h5 class="card-title">Bocina bluetooth</h5>
+            <p class="card-text">Marca: LG</p>
+            <p class="card-text">Modelo: XBOOMgo</p>
+            <a href="#" class="btn btn-outline-primary btnBocina">Agregar</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./imagenes/galeria-3.jpg" class="card-img-top cardImagen" alt="imagen de bocina">
+          <div class="card-body ">
+            <h5 class="card-title">Altavoz inteligente "Alexa"</h5>
+            <p class="card-text">Marca: Amazon</p>
+            <p class="card-text">Modelo: AMZ2023y</p>
+            <a href="#" class="btn btn-outline-primary btnAltavoz">Agregar</a>
+          </div>
+        </div>
+        
+        <div id="logo">
+          <a href="#" class="logoWhats"><iconify-icon icon="ic:round-whatsapp"></iconify-icon></a>     
+        </div>
+
       </section>
-
-      <div class="estiloTexto">
-        <p>A nosotros nos interesa saber mas de sus opiniones y/o sugerencias para seguir mejorando y darle un servicio de calidad que se merece durante su estancia en cada
-          de nuestras sucursales. Así que lo invitamos a que se registre para tomarlo en cuenta.
-        </p>
-      </div>
     </main>
-
     <footer class="footerIndex">
-      <p>ArgenMex --- Todos los derechos reservados</p>
-      <iconify-icon class="iconoFacebook" icon="ic:twotone-facebook"></iconify-icon>
+      <nav>
+        <ul class="navFooter">
+          <li>
+            <a href="#">
+              <img src="./imagenes/galeria-4.jpg" id="imagenFooter" alt="Logo de auditech" />
+            </a>
+          </li>
+          <li>
+            <a href="#">App móvil</a>
+          </li>
+          <li>
+            <a  href="#">Comunidad IT</a>
+          </li>
+          <li>
+            <a href="#">Compañía</a>
+          </li>
+          <div>
+            <span >©Auditech, Inc. 2022 Pensando siempre en nuestros clientes!</span>
+          </div>
+        </ul>
+      </nav>
     </footer>
-    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
   </body>
 </html>
