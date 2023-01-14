@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-color: #F6F4F6;
+}
+
+header div {
+  width: 100%;
+}
+
+header div #logoIndex {
+  position: absolute;
+  top: -25px;
+  left: -20px;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin: 2rem;
+}
+
+header div .carritoCompras {
+  position: absolute;
+  top: -10px;
+  right: -20px;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin: 2rem;
+}
+
+header nav {
+  padding: 40px;
+}
+
+header nav .navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .navBar li {
+  list-style: none;
+}
+
+header nav .navBar li a {
+  text-decoration: none;
+  color: #18A0FB;
+  padding: 0.5rem;
+  letter-spacing: 1px;
+}
+
+header nav .navBar li a:hover {
+  background-color: #EF816B;
+  border-radius: 30px;
+  color: #F6F4F6;
+}
+
+header nav .navBar span {
+  width: 40%;
+}
+
+header nav .navBar span input {
+  width: 70%;
+  height: 1.5rem;
+}
+
+header nav .navBar span input:focus-visible {
+  outline: 2px solid #18A0FB;
+}
+
+header nav .navBar span .btnBuscar {
+  width: 80px;
+  height: 2rem;
+  background-color: #18A0FB;
+  color: white;
+  letter-spacing: 0.5px;
+  border-radius: 30px;
+  margin-left: 10px;
+  border: 0;
+  font-size: 0.9rem;
+}
+
+header nav .navBar span .btnBuscar:hover {
+  background-color: #EF816B;
+  color: white;
+  -webkit-box-shadow: 0 0 2px 2px #b3b0b0;
+          box-shadow: 0 0 2px 2px #b3b0b0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header div .btnMenu {
+  display: none;
+}
+
+@media only screen and (max-width: 720px) {
+  header div #logoIndex {
+    width: 4rem;
+    height: 4rem;
+  }
+  header div .carritoCompras {
+    display: none;
+  }
+  header div .btnMenu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    margin: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: #18A0FB;
+    color: white;
+    border-radius: 45px;
+    border: 1px solid #4d4c4c;
+    font-size: 1.3rem;
+  }
+  header nav .navBar {
+    display: none;
+  }
+}
+
+main .seccion1 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .seccion1 h1 {
+  text-align: center;
+  margin-top: 3rem;
+  color: #EF816B;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+main .seccion1 .textoSlogan {
+  position: relative;
+  top: 220px;
+  text-align: center;
+  font-size: 2rem;
+  color: blue;
+  letter-spacing: 3px;
+  font-weight: 700;
+  z-index: 1;
+}
+
+main .seccion1 .imagenFondo {
+  margin: 2rem;
+  width: 1250px;
+  height: 350px;
+  opacity: 0.4;
+}
+
+main .seccion2 {
+  margin: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 30px;
+  padding: 20px;
+}
+
+main .seccion2 .card {
+  width: 18rem;
+}
+
+main .seccion2 .card .cardImagen {
+  width: 80%;
+}
+
+main .seccion2 .card .card-body .btnAudifonos {
+  color: white;
+  background-color: blueviolet;
+}
+
+main .seccion2 .card .card-body .btnAudifonos:hover {
+  background-color: white;
+  color: blueviolet;
+}
+
+main .seccion2 .card .card-body .btnAirpods {
+  color: white;
+  background-color: blue;
+}
+
+main .seccion2 .card .card-body .btnAirpods:hover {
+  background-color: white;
+  color: blue;
+}
+
+main .seccion2 .card .card-body .btnBocina {
+  color: white;
+  background-color: #b2f17e;
+}
+
+main .seccion2 .card .card-body .btnBocina:hover {
+  background-color: white;
+  color: #b2f17e;
+}
+
+main .seccion2 .card .card-body .btnAltavoz {
+  color: #b2f17e;
+  background-color: #6969d3;
+}
+
+main .seccion2 .card .card-body .btnAltavoz:hover {
+  background-color: #b2f17e;
+  color: #6969d3;
+}
+
+main .seccion2 .card .Cards, main .seccion2 .card .cardAirpods {
+  margin-top: 6rem;
+}
+
+main .seccion2 .card:hover {
+  -webkit-box-shadow: 0px 0px 5px 5px #f3f3f3;
+          box-shadow: 0px 0px 5px 5px #f3f3f3;
+  width: 18.1rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border: 0;
+}
+
+main .seccion2 #logo .logoWhats {
+  position: fixed;
+  top: 68%;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #94d46e;
+  color: white;
+  font-size: 40px;
+  padding: 1px;
+  text-align: center;
+}
+
+main .seccion2 #logo .logoWhats:hover {
+  background-color: white;
+  color: #94d46e;
+  -webkit-box-shadow: 0px 0px 1px 1px #bce29d;
+          box-shadow: 0px 0px 1px 1px #bce29d;
+}
+
+@media only screen and (max-width: 720px) {
+  main .seccion1 h1 {
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
+  main .seccion1 .textoSlogan {
+    font-size: 1.5rem;
+  }
+  main .seccion1 .imagenFondo {
+    margin: 0.5rem;
+    width: 95%;
+    opacity: 0.4;
+  }
+  main .seccion2 {
+    margin: 0.5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+  }
+  main .seccion2 .card {
+    width: 13rem;
+  }
+  main .seccion2 .card .Cards, main .seccion2 .card .cardAirpods {
+    margin-top: 5rem;
+  }
+  main .seccion2 .card:hover {
+    width: 13.1rem;
+  }
+}
+
+.footerIndex {
+  margin-top: 5rem;
+}
+
+.footerIndex nav {
+  padding: 20px;
+}
+
+.footerIndex nav .navFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footerIndex nav .navFooter li {
+  list-style: none;
+}
+
+.footerIndex nav .navFooter li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 0.5rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.footerIndex nav .navFooter li a:hover {
+  color: #18A0FB;
+  text-decoration: underline;
+}
+
+.footerIndex nav .navFooter li a #imagenFooter {
+  margin-right: 5rem;
+  width: 4rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .footerIndex nav {
+    padding: 10px;
+  }
+  .footerIndex nav .navFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footerIndex nav .navFooter li a {
+    padding: 0.5rem;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  .footerIndex nav .navFooter li a #imagenFooter {
+    margin-right: 3rem;
+    width: 3rem;
+  }
+  .footerIndex nav .navFooter div {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
