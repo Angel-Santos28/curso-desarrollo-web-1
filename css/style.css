@@ -9,19 +9,16 @@
 header {
   background-color: #F6F4F6;
 }
-header div {
-  width: 100%;
-}
-header div #logoIndex {
+header nav div a .logoIndex {
   position: absolute;
-  top: -25px;
+  top: -30px;
   left: -20px;
-  width: 5rem;
-  height: 5rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   margin: 2rem;
 }
-header div .carritoCompras {
+header nav div div ul .carritoCompras, header nav div div ul main .seccionGeneral .contadorCarrito, main .seccionGeneral header nav div div ul .contadorCarrito {
   position: absolute;
   top: -10px;
   right: -20px;
@@ -30,85 +27,95 @@ header div .carritoCompras {
   border-radius: 50%;
   margin: 2rem;
 }
-header nav {
-  padding: 40px;
-}
-header nav .navBar {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-header nav .navBar li {
-  list-style: none;
-}
-header nav .navBar li a {
-  text-decoration: none;
-  color: #18A0FB;
-  padding: 0.5rem;
-  letter-spacing: 1px;
-}
-header nav .navBar li a:hover {
-  background-color: #EF816B;
-  border-radius: 30px;
-  color: #F6F4F6;
-}
-header nav .navBar span {
-  width: 40%;
-}
-header nav .navBar span input {
-  width: 70%;
-  height: 1.5rem;
-}
-header nav .navBar span input:focus-visible {
-  outline: 2px solid #18A0FB;
-}
-header nav .navBar span .btnBuscar {
-  width: 80px;
-  height: 2rem;
-  background-color: #18A0FB;
-  color: white;
-  letter-spacing: 0.5px;
-  border-radius: 30px;
-  margin-left: 10px;
-  border: 0;
-  font-size: 0.9rem;
-}
-header nav .navBar span .btnBuscar:hover {
-  background-color: #EF816B;
-  color: white;
-  box-shadow: 0 0 2px 2px rgb(179, 176, 176);
-  transition: all 0.3s;
-}
-header div .btnMenu {
-  display: none;
-}
 
-@media only screen and (max-width: 720px) {
-  header div #logoIndex {
-    width: 4rem;
-    height: 4rem;
-  }
-  header div .carritoCompras {
-    display: none;
-  }
-  header div .btnMenu {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 0px;
-    margin: 1rem;
-    width: 2rem;
-    height: 2rem;
-    background-color: #18A0FB;
-    color: white;
-    border-radius: 45px;
-    border: 1px solid #4d4c4c;
-    font-size: 1.3rem;
-  }
-  header nav .navBar {
-    display: none;
-  }
+/*nav {
+        padding: 40px;
+        .navBar {
+            display: flex;
+            justify-content:space-evenly;
+            align-items:center;
+            li { 
+                list-style: none;
+                a {
+                   text-decoration: none;
+                   color: #18A0FB;
+                   padding: 0.5rem;
+                   letter-spacing: 1px;
+                   &:hover{
+                        background-color: $colorFondo;
+                        border-radius: 30px;
+                        color: #F6F4F6;
+                   }
+                } 
+            }
+            span {
+                width: 40%;
+                input {
+                    width: 70%;
+                    height: 1.5rem;
+                    &:focus-visible {
+                        outline: 2px solid #18A0FB;
+                    }
+                }
+                .btnBuscar {
+                    width: 80px;
+                    height: 2rem;
+                    background-color: #18A0FB;
+                    color: white;
+                    letter-spacing: 0.5px;
+                    border-radius: 30px;
+                    margin-left: 10px;
+                    border: 0;
+                    font-size: 0.9rem;
+                    &:hover {
+                        background-color: $colorFondo;
+                        color: white;
+                        box-shadow:  0 0 2px 2px rgb(179, 176, 176);
+                        transition: all 0.3s;
+                    }
+                }
+            }
+        }
+    }
+    div {
+        .btnMenu {
+            display: none;
+        }
+    }
+
 }
+@media only screen and (max-width:720px){
+    header {
+        div {
+            #logoIndex {
+                width: 4rem;
+                height: 4rem;
+            }
+            .carritoCompras {
+                display: none;
+            }
+            .btnMenu {
+                display: block;
+                position:absolute;
+                top: 10px;
+                right: 0px;
+                margin: 1rem;
+                width: 2rem;
+                height: 2rem;
+                background-color: #18A0FB;
+                color: white;
+                border-radius: 45px;
+                border:1px solid #4d4c4c;
+                font-size: 1.3rem;
+            }
+        }
+        nav {
+            .navBar {
+                display: none;
+            }
+        }
+    }
+}*/
 main .seccion1 {
   justify-content: center;
 }
@@ -135,62 +142,29 @@ main .seccion1 .imagenFondo {
   height: 350px;
   opacity: 0.4;
 }
-main .seccion2 {
+main .seccionGeneral .carritoCompras, main .seccionGeneral .contadorCarrito {
+  position: absolute;
+  top: 22px;
+  right: -20px;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
   margin: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 30px;
-  padding: 20px;
 }
-main .seccion2 .card {
-  width: 18rem;
+main .seccionGeneral .contadorCarrito {
+  right: -30px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #bb227e;
+  text-align: center;
+  color: #ffffff;
 }
-main .seccion2 .card .cardImagen {
-  width: 80%;
+main .seccionGeneral .contenidoCarrito {
+  display: flex;
+  justify-content: space-between;
 }
-main .seccion2 .card .card-body .btnAudifonos {
-  color: white;
-  background-color: blueviolet;
-}
-main .seccion2 .card .card-body .btnAudifonos:hover {
-  background-color: white;
-  color: blueviolet;
-}
-main .seccion2 .card .card-body .btnAirpods {
-  color: white;
-  background-color: blue;
-}
-main .seccion2 .card .card-body .btnAirpods:hover {
-  background-color: white;
-  color: blue;
-}
-main .seccion2 .card .card-body .btnBocina {
-  color: white;
-  background-color: #b2f17e;
-}
-main .seccion2 .card .card-body .btnBocina:hover {
-  background-color: white;
-  color: #b2f17e;
-}
-main .seccion2 .card .card-body .btnAltavoz {
-  color: #b2f17e;
-  background-color: rgb(105, 105, 211);
-}
-main .seccion2 .card .card-body .btnAltavoz:hover {
-  background-color: #b2f17e;
-  color: rgb(105, 105, 211);
-}
-main .seccion2 .card .Cards, main .seccion2 .card .cardAirpods {
-  margin-top: 6rem;
-}
-main .seccion2 .card:hover {
-  box-shadow: 0px 0px 5px 5px #f3f3f3;
-  width: 18.1rem;
-  transition: all 0.2s;
-  border: 0;
-}
-main .seccion2 #logo .logoWhats {
+main .seccionGeneral #logo .logoWhats {
   position: fixed;
   top: 68%;
   right: 20px;
@@ -203,13 +177,76 @@ main .seccion2 #logo .logoWhats {
   padding: 1px;
   text-align: center;
 }
-main .seccion2 #logo .logoWhats:hover {
+main .seccionGeneral #logo .logoWhats:hover {
   background-color: white;
   color: rgb(148, 212, 110);
   box-shadow: 0px 0px 1px 1px #bce29d;
 }
+main .contenedorProductos {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0 5rem;
+  margin-top: 3rem;
+}
+main .contenedorProductos div .cardProductos {
+  width: 18rem;
+}
+main .contenedorProductos div .cardProductos .imgProductos {
+  height: 200px;
+  object-fit: contain;
+}
+main .contenedorProductos div .cardProductos .cuerpoCard {
+  background-color: #bd9cb1;
+}
+main .contenedorProductos div .cardProductos .cuerpoCard .tituloProducto, main .contenedorProductos div .cardProductos .cuerpoCard .precioProducto {
+  color: #2E294E;
+  font-size: 20px;
+}
+main .contenedorProductos div .cardProductos .cuerpoCard .precioProducto {
+  font-size: 15px;
+  margin: 1.5rem 0;
+}
+main .contenedorProductos div .cardProductos .cuerpoCard .btnAgregarCarrito {
+  background-color: #B80770;
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+}
+main .contenedorProductos div .cardProductos .cuerpoCard .btnAgregarCarrito:hover {
+  background-color: #2c4b4d;
+}
+main .contenedorProductos div .cardProductos:hover {
+  box-shadow: 0px 0px 5px 5px #f3f3f3;
+  transform: translateY(-2px);
+  border-color: rgb(93, 93, 236);
+  transition: all 0.4s;
+}
 
 @media only screen and (max-width: 720px) {
+  main {
+    /*.seccion2 {
+        margin: 0.5rem;
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: 1fr 1fr  1fr 1fr ;
+        gap: 10px;
+        padding: 20px;
+        margin-top: 3rem;
+        div {
+            .card {
+                width: 22rem;
+                .Cards {
+                     margin-top: 5rem;
+                }
+                &:hover {
+                    width: 22.1rem;
+                }
+            }
+        }
+    }*/
+  }
   main .seccion1 h1 {
     margin-top: 3rem;
     font-size: 2rem;
@@ -221,23 +258,6 @@ main .seccion2 #logo .logoWhats:hover {
     margin: 0.5rem;
     width: 95%;
     opacity: 0.4;
-  }
-  main .seccion2 {
-    margin: 0.5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
-    padding: 20px;
-  }
-  main .seccion2 .card {
-    width: 13rem;
-  }
-  main .seccion2 .card .Cards, main .seccion2 .card .cardAirpods {
-    margin-top: 5rem;
-  }
-  main .seccion2 .card:hover {
-    width: 13.1rem;
   }
 }
 .footerIndex {
