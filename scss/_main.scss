@@ -1,3 +1,14 @@
+//mixin boton
+@mixin btnPrimario ($colorFondoBoton, $colorTextoBoton){
+    color: $colorFondoBoton;
+    background-color: $colorTextoBoton;
+    &:hover{
+        background-color: $colorFondoBoton;
+        color: $colorTextoBoton;
+    }
+}
+
+//contenido
 main {
     .seccion1 {
         justify-content:center;
@@ -48,6 +59,21 @@ main {
         .contenidoCarrito {
             display: flex;
             justify-content: space-between;
+        }
+        .contenedorBotones {
+            display: flex;
+            justify-content:center;
+            flex-wrap: wrap;
+            gap: 5px;
+            .btnMostrar {
+                @include btnPrimario(#fff, #bb227e);
+                border-radius: 45px;
+                border-color: #2c4b4d;
+                padding: 2px;
+            }
+            .btnOcultar {
+                @extend .btnMostrar;
+            }
         }
         #logo {
             .logoWhats {

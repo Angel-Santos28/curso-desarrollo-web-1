@@ -164,6 +164,23 @@ main .seccionGeneral .contenidoCarrito {
   display: flex;
   justify-content: space-between;
 }
+main .seccionGeneral .contenedorBotones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+main .seccionGeneral .contenedorBotones .btnMostrar, main .seccionGeneral .contenedorBotones .btnOcultar {
+  color: #fff;
+  background-color: #bb227e;
+  border-radius: 45px;
+  border-color: #2c4b4d;
+  padding: 2px;
+}
+main .seccionGeneral .contenedorBotones .btnMostrar:hover, main .seccionGeneral .contenedorBotones .btnOcultar:hover {
+  background-color: #fff;
+  color: #bb227e;
+}
 main .seccionGeneral #logo .logoWhats {
   position: fixed;
   top: 68%;
