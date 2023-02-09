@@ -2,12 +2,12 @@ const contadorCarrito = document.getElementById("contadorCarrito");
 const contenidoCarrito = document.getElementById("contenidoCarrito");
 
 const productos = [
-   {id:1, nombre:"manos libres", marca:"Samsung", precio:300, img:"../imagenes/galeria-6.jpg", cantidad:1},
-   {id:2, nombre:"AirPods", marca:"Iphone", precio:2000, img:"../imagenes/galeria-5.jpg", cantidad:1},
-   {id:3, nombre:"Bocina bluetooth", marca:"LG", precio:3000, img:"../imagenes/galeria-2.jpg", cantidad:1},
-   {id:4, nombre:"Altavoz Alexa", marca:"Amazon", precio:4000, img:"../imagenes/galeria-3.jpg", cantidad:1},
-   {id:5, nombre:"Audifono bluetooth", marca:"Steren", precio:600, img:"../imagenes/galeria-4.jpg", cantidad:1},
-   {id:6, nombre:"Bocinas teatro en casa" , marca:"LG", precio:4000, img:"../imagenes/galeria-8.jpg", cantidad:1}
+   {id:1, nombre:"manos libres", marca:"Samsung", precio:300, img:"./imagenes/galeria-6.jpg", cantidad:1},
+   {id:2, nombre:"AirPods", marca:"Iphone", precio:2000, img:"./imagenes/galeria-5.jpg", cantidad:1},
+   {id:3, nombre:"Bocina bluetooth", marca:"LG", precio:3000, img:"./imagenes/galeria-2.jpg", cantidad:1},
+   {id:4, nombre:"Altavoz Alexa", marca:"Amazon", precio:4000, img:"./imagenes/galeria-3.jpg", cantidad:1},
+   {id:5, nombre:"Audifono bluetooth", marca:"Steren", precio:600, img:"./imagenes/galeria-4.jpg", cantidad:1},
+   {id:6, nombre:"Bocinas teatro en casa" , marca:"LG", precio:4000, img:"./imagenes/galeria-8.jpg", cantidad:1}
 ];
 
 //ARRAY DE CARRITO DE COMPRAS
