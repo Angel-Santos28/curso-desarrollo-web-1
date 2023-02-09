@@ -115,8 +115,10 @@ const agregarContadorCarrito = () => {
     contenedorProductos.innerHTML='';
   });
 
-//eliminar producto
+//eliminando producto de carrito
 const eliminaProductoDeCarrito = (id, carrito) => {
- const productoEliminado = carrito.splice(id, 1);
-  console.log("Se elimino con exito el producto!", productoEliminado);
-}
+  const productoEliminado = carrito.findIndex(item => item.id === id);
+  carrito.splice(productoEliminado, 1);
+  contadorCarrito.innerHTML='';
+ }
+ //carrito.findIndex(item => item.id === id);
