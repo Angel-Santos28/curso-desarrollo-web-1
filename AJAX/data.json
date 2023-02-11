@@ -1,0 +1,67 @@
+[
+    {
+      "id": 1,
+      "nombre": "Angel",
+      "apellido": "Anselmo de los santos",
+      "email": "angel@gmail.com",
+      "direccion": {
+        "colonia": "seccion 13",
+        "calle": "priv. 20 de noviembre",
+        "ciudad": "San Andres",
+        "codigoPostal": "73330"
+      },
+      "telefono": "2216789291"
+    },
+    {
+        "id": 2,
+        "nombre": "Maria",
+        "apellido": "Lopez Hernández",
+        "email": "maria@gmail.com",
+        "direccion": {
+          "colonia": "cuauhtemoc",
+          "calle": "av. independencia",
+          "ciudad": "Mazapiltepec",
+          "codigoPostal": "71340"
+        },
+        "telefono": "2212308901"
+      },
+      {
+        "id": 3,
+        "nombre": "Efrain",
+        "apellido": "Anselmo de los santos",
+        "email": "efrain@gmail.com",
+        "direccion": {
+          "colonia": "seccion 13",
+          "calle": "priv. 20 de noviembre",
+          "ciudad": "Tlayehualancingo",
+          "codigoPostal": "73330"
+        },
+        "telefono": "5557689287"
+      },
+      {
+        "id": 4,
+        "nombre": "Luis",
+        "apellido": "Marquez Orozco",
+        "email": "luis@gmail.com",
+        "direccion": {
+          "colonia": "carranza",
+          "calle": "av. principal",
+          "ciudad": "Puebla",
+          "codigoPostal": "75282"
+        },
+        "telefono": "2213490867"
+      },
+      {
+        "id": 5,
+        "nombre": "Emanuel",
+        "apellido": "Ruiz Cortinez",
+        "email": "ema@gmail.com",
+        "direccion": {
+          "colonia": "Aquiles serdan",
+          "calle": "av. miguel hidalgo",
+          "ciudad": "Ciudad de México",
+          "codigoPostal": "74929"
+        },
+        "telefono": "5553678728"
+      }
+  ]

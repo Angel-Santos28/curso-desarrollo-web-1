@@ -1,87 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Productos</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./css/style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-              <img  class="logoIndex" src="./imagenes/audifonos.png" alt="logotipo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">¿Quienes Somos?</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contacto</a>
-                </li>
-              </ul> 
-            </div>
-          </div>
-        </nav>
-      </header>
-      <main>
-        <section class="seccionGeneral">
-          <a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-            <img src="./imagenes/carrito.png" class="carritoCompras" alt="carrito de compras">
-            <p id="contadorCarrito"></p>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img class="logoIndex" src="./imagenes/audifonos.png" alt="logotipo"/>
           </a>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasRightLabel">CARRITO DE COMPRAS</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body" id="contenidoCarrito"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">¿Quienes Somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
           </div>
-          <div id="logo">
-            <a href="#" class="logoWhats"><iconify-icon icon="ic:round-whatsapp"></iconify-icon></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="seccionGeneral">
+        <a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <img src="./imagenes/carrito.png" class="carritoCompras" alt="carrito de compras"/>
+          <p id="contadorCarrito"></p>
+        </a>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">
+              CARRITO DE COMPRAS
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="contenedorBotones">
-            <button type="button" id="mostrarProductos" class="btnMostrar">Mostrar productos</button>
-            <button type="button" id="ocultarProductos" class="btnOcultar">Ocultar productos</button>
+          <div class="offcanvas-body" id="contenidoCarrito"></div>
+        </div>
+        <div id="logo">
+          <a href="#" class="logoWhats"><iconify-icon icon="ic:round-whatsapp"></iconify-icon></a>
+        </div>
+        <div class="contenedorBotones">
+          <button type="button" id="mostrarProductos" class="btnMostrar">
+            Mostrar productos
+          </button>
+          <button type="button" id="ocultarProductos" class="btnOcultar">
+            Ocultar productos
+          </button>
+        </div>
+      </section>
+      <section class="contenedorProductos" id="contenedorProductos"></section>
+    </main>
+    <footer class="footerIndex">
+      <nav>
+        <ul class="navFooter">
+          <li>
+            <a href="#">
+              <img src="./imagenes/galeria-4.jpg" id="imagenFooter" alt="Logo de auditech"/>
+            </a>
+          </li>
+          <li>
+            <a href="#">App móvil</a>
+          </li>
+          <li>
+            <a href="#">Comunidad IT</a>
+          </li>
+          <li>
+            <a href="#">Compañía</a>
+          </li>
+          <div>
+            <span
+              >©Auditech, Inc. 2022 Pensando siempre en nuestros clientes!</span
+            >
           </div>
-        </section>
-        <section class="contenedorProductos" id="contenedorProductos"></section>
-      </main>
-      <footer class="footerIndex">
-        <nav>
-          <ul class="navFooter">
-            <li>
-              <a href="#">
-                <img src="./imagenes/galeria-4.jpg" id="imagenFooter" alt="Logo de auditech"/>
-              </a>
-            </li>
-            <li>
-              <a href="#">App móvil</a>
-            </li>
-            <li>
-              <a href="#">Comunidad IT</a>
-            </li>
-            <li>
-              <a href="#">Compañía</a>
-            </li>
-            <div>
-              <span>©Auditech, Inc. 2022 Pensando siempre en nuestros clientes!</span>
-            </div>
-          </ul>
-        </nav>
-      </footer>
-      <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="./js/funcionesDom.js"></script>
-</body>
+        </ul>
+      </nav>
+    </footer>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/funcionesDom.js"></script>
+  </body>
 </html>
