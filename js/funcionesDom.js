@@ -4,6 +4,8 @@ const vaciarCarrito = document.getElementById("vaciarCarrito");
 const  precioTotal = document.getElementById("precioTotal");
 const  menorProductos = document.getElementById('menorProductos');
 const  mayorProductos = document.getElementById('mayorProductos');
+const comprarCarrito = document.getElementById('comprarCarrito');
+
 const productos = [
    {id:1, nombre:"manos libres", marca:"Samsung", precio:300, img:"./imagenes/galeria-6.jpg", cantidad:1},
    {id:2, nombre:"AirPods", marca:"Iphone", precio:2000, img:"./imagenes/galeria-5.jpg", cantidad:1},
@@ -12,6 +14,14 @@ const productos = [
    {id:5, nombre:"Audifono bluetooth", marca:"Steren", precio:600, img:"./imagenes/galeria-4.jpg", cantidad:1},
    {id:6, nombre:"Bocinas teatro en casa" , marca:"LG", precio:4000, img:"./imagenes/galeria-8.jpg", cantidad:1}
 ];
+//comprar
+comprarCarrito.addEventListener ("click", ()=> {
+  Swal.fire(
+    'Gracias por su compra!!'
+  )
+  actualizarCarrito();
+  vaciarCarrito();
+});
 //ordenar productos
 menorProductos.addEventListener ("click", ()=> {
   const ordenado = productos.sort(function(a, b){return a.precio - b.precio})
@@ -156,11 +166,10 @@ const eliminaProductoDeCarrito = (id, carrito) => {
    actualizarCarrito();
  })
  /*carrito.findIndex(item => item.id === id);*/
+
+
+
  
-
-
-
-
 
 
 
