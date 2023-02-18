@@ -1,6 +1,9 @@
 const contadorCarrito = document.getElementById("contadorCarrito"); 
 const contenidoCarrito = document.getElementById("contenidoCarrito");
-
+const vaciarCarrito = document.getElementById("vaciarCarrito");
+const  precioTotal = document.getElementById("precioTotal");
+const  menorProductos = document.getElementById('menorProductos');
+const  mayorProductos = document.getElementById('mayorProductos');
 const productos = [
    {id:1, nombre:"manos libres", marca:"Samsung", precio:300, img:"./imagenes/galeria-6.jpg", cantidad:1},
    {id:2, nombre:"AirPods", marca:"Iphone", precio:2000, img:"./imagenes/galeria-5.jpg", cantidad:1},
@@ -9,6 +12,18 @@ const productos = [
    {id:5, nombre:"Audifono bluetooth", marca:"Steren", precio:600, img:"./imagenes/galeria-4.jpg", cantidad:1},
    {id:6, nombre:"Bocinas teatro en casa" , marca:"LG", precio:4000, img:"./imagenes/galeria-8.jpg", cantidad:1}
 ];
+//ordenar productos
+menorProductos.addEventListener ("click", ()=> {
+  const ordenado = productos.sort(function(a, b){return a.precio - b.precio})
+  contenedorProductos.innerHTML="";
+  prod(ordenado);
+});
+
+mayorProductos.addEventListener ("click", ()=> {
+  const ordenado =  productos.sort(function(a, b){return  b.precio - a.precio})
+  contenedorProductos.innerHTML="";
+  prod(ordenado);
+});
 
 //ARRAY DE CARRITO DE COMPRAS
 const carrito = [];
@@ -16,9 +31,20 @@ const carrito = [];
 
 //FUNCIÓN AGREGAR AL CARRITO
 const agregarAlCarrito = (id, carrito) => {
-    const productoElegido = productos.find(item => item.id === id);
-    carrito.push(productoElegido);
-    console.log("Se agrego con exito el producto!", carrito);
+    const existeProducto = carrito.some (prod => prod.id ===id)
+    //sumando producto repetido
+    if(existeProducto){
+      const prod = carrito.map(prod => {
+        if(prod.id === id){
+          prod.cantidad++;
+        }
+      })
+    }else{
+      const productoElegido = productos.find(item => item.id === id);
+      carrito.push(productoElegido);
+      console.log("Se agrego con exito el producto!", carrito);
+  
+    }
 }
 
 //CONTADOR CARRITO
@@ -29,6 +55,8 @@ const agregarContadorCarrito = () => {
   }
 }
  //muestra productos en el DOM
+
+ const prod =(productos)=>{
  productos.forEach(producto => {
    const div = document.createElement("div");
    div.innerHTML = 
@@ -52,31 +80,30 @@ const agregarContadorCarrito = () => {
       actualizarCarrito();
     });
  })
-
+}
  //actualiza y muestra contenido del carrito
- const actualizarCarrito = () => {
-   contenidoCarrito.innerHTML = "";
-   carrito.forEach(producto => {
-       const div = document.createElement("div");
-       div.classList.add("contenidoCarrito");
-       div.innerHTML = 
-       `
-         <p>${producto.cantidad}</p>
+ function actualizarCarrito() {
+  contenidoCarrito.innerHTML = "";
+  carrito.forEach(producto => {
+    const div = document.createElement("div");
+    div.classList.add("contenidoCarrito");
+    div.innerHTML =
+      `
+         <p>Cant: ${producto.cantidad}</p>
          <p>${producto.nombre}</p>
          <p>PRECIO: $${producto.precio}</p>
          <button class="btn btn-primary" id="eliminarProducto${producto.id}">Eliminar</button>
-       `
-
-       contenidoCarrito.appendChild(div);
-
+       `;
+    contenidoCarrito.appendChild(div);
     const eliminarProducto = document.getElementById(`eliminarProducto${producto.id}`);
-    eliminarProducto.addEventListener ("click", ()=> {
+    eliminarProducto.addEventListener("click", () => {
       eliminaProductoDeCarrito(producto.id, carrito);
       agregarContadorCarrito();
       actualizarCarrito();
     });
-   })
- }
+  });
+  precioTotal.innerText = carrito.reduce((acu, producto) => acu + producto.precio, 0);
+}
 
  //MOSTRAR PRODUCTOS
 
@@ -119,6 +146,21 @@ const agregarContadorCarrito = () => {
 const eliminaProductoDeCarrito = (id, carrito) => {
   const productoEliminado = carrito.findIndex(item => item.id === id);
   carrito.splice(productoEliminado, 1);
-  contadorCarrito.innerHTML='';
+  contadorCarrito.textContent='';
  }
- //carrito.findIndex(item => item.id === id);
+
+ //vaciar carrito
+ vaciarCarrito.addEventListener('click', () => {
+   carrito.length = 0;
+   contadorCarrito.textContent = "";
+   actualizarCarrito();
+ })
+ /*carrito.findIndex(item => item.id === id);*/
+ 
+
+
+
+
+
+
+

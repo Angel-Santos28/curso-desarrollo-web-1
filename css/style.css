@@ -167,20 +167,35 @@ main .seccionGeneral .contenidoCarrito {
 }
 main .seccionGeneral .contenedorBotones {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 5px;
+  margin: 5px;
+  padding: 10px;
 }
 main .seccionGeneral .contenedorBotones .btnMostrar, main .seccionGeneral .contenedorBotones .btnOcultar {
-  color: #fff;
-  background-color: #bb227e;
+  color: #bb227e;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
   border-radius: 45px;
   border-color: #2c4b4d;
   padding: 2px;
 }
 main .seccionGeneral .contenedorBotones .btnMostrar:hover, main .seccionGeneral .contenedorBotones .btnOcultar:hover {
+  background-color: #bb227e;
+  color: #fff;
+  box-shadow: 0px 2px 2px #bb227e;
+}
+main .seccionGeneral .contenedorBotones .ordenarProductos {
+  width: 250px;
+  color: #fff;
+  background-color: #bb227e;
+  font-family: "Montserrat", sans-serif;
+}
+main .seccionGeneral .contenedorBotones .ordenarProductos:hover {
   background-color: #fff;
   color: #bb227e;
+  box-shadow: 0px 2px 2px #fff;
 }
 main .seccionGeneral #logo .logoWhats {
   position: fixed;
@@ -241,30 +256,82 @@ main .contenedorProductos div .cardProductos:hover {
   border-color: rgb(93, 93, 236);
   transition: all 0.4s;
 }
+main #cajaContacto {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+}
+main #cajaContacto .contenedorContacto {
+  width: 35%;
+  box-shadow: 0px 2px 4px 4px #c7c7c7;
+  border-radius: 15px;
+  background-color: #fff;
+  display: grid;
+  grid-template-areas: "item item" "item1 item2" "item3 item4" "item5 item6" "item7 item8" "item9 item10" "item11 item11";
+  gap: 10px;
+  padding: 10px;
+}
+main #cajaContacto .contenedorContacto .item {
+  grid-area: item;
+}
+main #cajaContacto .contenedorContacto .item p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+main #cajaContacto .contenedorContacto .item1 {
+  grid-area: item1;
+}
+main #cajaContacto .contenedorContacto .item2 {
+  grid-area: item2;
+}
+main #cajaContacto .contenedorContacto .item3 {
+  grid-area: item3;
+}
+main #cajaContacto .contenedorContacto .item4 {
+  grid-area: item4;
+}
+main #cajaContacto .contenedorContacto .item5 {
+  grid-area: item5;
+}
+main #cajaContacto .contenedorContacto .item6 {
+  grid-area: item6;
+}
+main #cajaContacto .contenedorContacto .item7 {
+  grid-area: item7;
+}
+main #cajaContacto .contenedorContacto .item8 {
+  grid-area: item8;
+}
+main #cajaContacto .contenedorContacto .item9 {
+  grid-area: item9;
+}
+main #cajaContacto .contenedorContacto .item10 {
+  grid-area: item10;
+}
+main #cajaContacto .contenedorContacto .item11 {
+  grid-area: item11;
+  text-align: center;
+}
+main #cajaContacto .contenedorContacto .item11 .btnEnviar {
+  color: #fff;
+  background-color: #bb227e;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 45px;
+  border-color: #bb227e;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 2px;
+  width: 50%;
+}
+main #cajaContacto .contenedorContacto .item11 .btnEnviar:hover {
+  background-color: #fff;
+  color: #bb227e;
+  box-shadow: 0px 2px 2px #fff;
+}
 
 @media only screen and (max-width: 720px) {
-  main {
-    /*.seccion2 {
-        margin: 0.5rem;
-        display: grid;
-        grid-template-columns:  1fr;
-        grid-template-rows: 1fr 1fr  1fr 1fr ;
-        gap: 10px;
-        padding: 20px;
-        margin-top: 3rem;
-        div {
-            .card {
-                width: 22rem;
-                .Cards {
-                     margin-top: 5rem;
-                }
-                &:hover {
-                    width: 22.1rem;
-                }
-            }
-        }
-    }*/
-  }
   main .seccion1 h1 {
     margin-top: 3rem;
     font-size: 2rem;

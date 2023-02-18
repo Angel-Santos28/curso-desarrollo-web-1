@@ -27,7 +27,7 @@
                 <a class="nav-link" href="#">¿Quienes Somos?</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="productos.html">Producto</a>
+                <a class="nav-link" href="productos.html">Productos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contacto.html">Contacto</a>
@@ -38,29 +38,46 @@
       </nav>
     </header>
     <main>
-      <section>
-        <div>
-          <h1>Contactos</h1>
-        </div>
-        <h6>CONTACTOS DE USUARIOS DESDE UNA API</h6>
-        <table id="listado" class="border">
-          <tr>
-              <td>ID</td>
-              <td>NOMBRE</td>
-              <td>USUARIO</td>
-              <td>EMAIL</td>
-          </tr>
-        </table>
-        <hr>
-        <h6>CONTACTOS DE CLIENTES DESDE UNA RUTA RELATIVA</h6>
-        <table id="listaUsuarios" class="border">
-          <tr>
-              <td >ID</td>
-              <td>NOMBRE</td>
-              <td>APELLIDO</td>
-              <td>EMAIL</td>
-          </tr>
-      </table>
+      <section id="cajaContacto">
+        <form class="contenedorContacto">
+              <div class="item">
+                <p>CONTACTO</p>
+                <hr>
+              </div>
+              <div class="item1">
+                 <label for="lbl_nom">Nombre</label>
+              </div>
+              <div class="item2">                
+                 <input type="text" name="txtNombre" class="form-control" placeholder="Ingresa tu nombre" autofocus>
+              </div>
+              <div class="item3">
+                 <label for="lbl_nom">Apellidos</label>
+              </div>
+              <div class="item4">                
+                 <input type="text" name="txtApellido" class="form-control" placeholder="Ingresa tus apellidos">
+              </div>
+              <div class="item5">
+                 <label for="lbl_nom">Correo</label>
+              </div>
+              <div class="item6">                
+                 <input type="email" name="txtCorreo" class="form-control" placeholder="Ingresa tu correo">
+              </div>
+              <div class="item7">
+                  <label for="lbl_nom">Teléfono</label>
+              </div>
+              <div class="item8">                
+                 <input type="text" name="txtTelefono" class="form-control" placeholder="Ingresa tu # de teléfono">
+              </div>
+              <div class="item9">
+                  <label for="lbl_nom">Comentario</label>
+              </div>
+              <div class="item10">  
+                  <textarea name="txtComentario" id="txtComentario" cols="30" rows="5" class="form-control"  placeholder="Escribe tus comentarios..."></textarea>
+              </div>
+              <div class="item11">
+                   <button name="btnEnviar" type="submit" class="btnEnviar">Enviar</button>
+              </div>
+        </form>
       </section>
     </main>
     <footer class="footerIndex">
@@ -87,6 +104,5 @@
       </nav>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/fetch.js"></script>
   </body>
 </html>

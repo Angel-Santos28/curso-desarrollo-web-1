@@ -1,8 +1,10 @@
 @mixin btnPrimario ($btnColorFondo, $btnColorTexto){
     color: $btnColorTexto;
     background-color: $btnColorFondo;
+    font-family: $tipografiaPrincipal;
     &:hover{
         background-color: $btnColorTexto;
         color: $btnColorFondo;
+        box-shadow: 0px 2px 2px $btnColorTexto;
     }
 }

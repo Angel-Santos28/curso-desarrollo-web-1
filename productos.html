@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg  bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img class="logoIndex" src="./imagenes/audifonos.png" alt="logotipo"/>
@@ -45,12 +45,12 @@
         </a>
         <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasRightLabel">
-              CARRITO DE COMPRAS
-            </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">CARRITO DE COMPRAS</h5>
+            <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body" id="contenidoCarrito"></div>
+          <p >Precio total: $<span id="precioTotal">0</span></p>
+          <button type="button" class="btn-control btn btn-primary m-2" id="vaciarCarrito">Vaciar carrito</button>
         </div>
         <div id="logo">
           <a href="#" class="logoWhats"><iconify-icon icon="ic:round-whatsapp"></iconify-icon></a>
@@ -61,6 +61,12 @@
           </button>
           <button type="button" id="ocultarProductos" class="btnOcultar">
             Ocultar productos
+          </button>
+          <button type="button" id="menorProductos" class="ordenarProductos ">
+            Ordenar de Menor a mayor
+          </button>
+          <button type="button" id="mayorProductos" class="ordenarProductos ">
+            Ordenar de Mayor a menor
           </button>
         </div>
       </section>
